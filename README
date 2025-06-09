@@ -1,0 +1,25 @@
+# AE Data Handler: MATLAB Tools for Acoustic Emission Analysis
+
+This project contains MATLAB functions for reading, merging, filtering and visualizing Acoustic Emission (AE) data collected 
+from Directed Energy Deposition (DED) processes. 
+It enables streamlined signal processing including timestamp-based selection, waveform plotting, and spectrogram extraction.
+
+## Features
+
+- Batch file reading with header interpretation
+- Merge and save raw AE data to a unified format
+- Extract data based on specific time ranges
+- Plot raw waveforms and overlay multiple channels
+- Ready for downstream feature extraction (e.g., STFT, spectrograms)
+
+## File Descriptions
+
+- `readMultipleFiles.m`: Load and merge raw binary AE data from multiple files
+- `selectData.m`: Select signal segments by timestamps
+- `plotWaveform.m`: Plot AE signals from merged or selected segments
+- `ReadWFSDataTrunk.m`, `ReadWFSHeader.m`: Low-level binary file parsers
+- `demo.m`: Example script showing how to use all components
+- `drawspectrum.m`: Visualizes spectrogram-like features of AE signals 
+   across time with optional event overlays and power trend plotting.
+
+## Example Usage is provided in the demo.mat
